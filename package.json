@@ -1,0 +1,19 @@
+{
+  "name": "local-skill-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Skill Exchange - MERN stack app for exchanging skills without money",
+  "scripts": {
+    "setup": "npm install && npm install --prefix backend && npm install --prefix frontend && node scripts/setup.js",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "env": "node scripts/setup.js",
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "seed:full": "npm run seed:full --prefix backend",
+    "test": "npm test --prefix backend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

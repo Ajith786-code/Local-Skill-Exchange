@@ -1,0 +1,28 @@
+module.exports = {
+  CATEGORIES: [
+    'Programming and Technology',
+    'Music',
+    'Languages',
+    'Cooking',
+    'Design',
+    'Business',
+    'Academics',
+    'Fitness and Sports',
+    'Photography',
+    'Other',
+  ],
+  LEVELS: ['beginner', 'intermediate', 'advanced', 'expert'],
+  LEARNING_MODES: ['in-person', 'online', 'either'],
+  REQUEST_STATUSES: ['pending', 'accepted', 'rejected', 'cancelled', 'completed'],
+  NOTIFICATION_TYPES: [
+    'request_received',
+    'request_accepted',
+    'request_rejected',
+    'request_cancelled',
+    'completion_requested',
+    'request_completed',
+    'new_message',
+  ],
+  COOKIE_NAME: 'lse_token',
+  MAX_MESSAGE_LENGTH: 1000,
+};
